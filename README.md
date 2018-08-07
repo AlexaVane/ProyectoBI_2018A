@@ -208,8 +208,57 @@ Para el filtrado de los tweets se usó las siguientes sintaxis:
     emit(lang, str)
     }
 
+**Procesamiento**
+
+Con la vista preprocesada de cada base de datos de un país se debe usar un script de phyton para la limpieza de emojis, caracteres especiales, links, tags debido a que estos caracteres no son usados para este análisis, con la siguiente sintaxis:
+def remove_emoji(string):
+
+    emoji_pattern = re.compile(
+      u"(\ud83d[\ude00-\ude4f])|" # emoticons
+      u"(\ud83c[\udf00-\uffff])|" # symbols & pictographs (1 of 2)
+      u"(\ud83d[\u0000-\uddff])|" # symbols & pictographs (2 of 2)
+      u"(\ud83d[\ude80-\udeff])|" # transport & map symbols
+      u"(\ud83c[\udde0-\uddff])" # flags (iOS)
+      "+", flags=re.UNICODE)
+    return emoji_pattern.sub(r'', string)
 
 
+    def limpiarTweets(tweet):
+      valida1=re.sub('[^A-Za-z0-9]+', ' ', tweet)
+      valida2=re.sub(r"http\S+", " ", valida1)
+      valida3=re.sub(r'^RT[\s]+', ' ', valida2)
+      valida4= re.sub(r'\$\w*', ' ', valida3)
+      resultado=remove_emoji(valida4)
+      return resultado
+      
+Posterior filtramos solo los tweets que hacen referencia del mundial.
+      
+      lstHashtags={"principal":"#Rusia2018",
+        "secundario":"#WorldCup",
+        "alterno":"#WorldCupFinal",
+        "argentina":"#ARG",
+        "belgica":"#BEL",
+        "brasil":"#BRA",
+        "colombia":"#COL",
+        "croacia":"#CRO",
+        "dinamarca":"#DEN",
+        "inglaterra":"#ENG",
+        "espana":"#ESP",
+        "francia":"#FRA",
+        "japon":"#JPN",
+        "mexico":"#MEX",
+        "panama":"#PAN",
+        "polonia":"#POL",
+        "portugal":"#POR",
+        "rusia":"#RUS",
+        "senegal":"#SEN",
+        "suiza":"#SUI",
+        "suecia":"#SWE",
+        "tunez":"#TUN",
+        "uruguay":"#URU"}
+    
+  **Análisis**
+  
 
 
 
