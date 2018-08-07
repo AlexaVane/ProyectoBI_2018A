@@ -320,7 +320,9 @@ Ahora podremos acceder a Apache CouchDB ejecutando la siguiente sintaxis, en un 
 
     https://www.youtube.com/watch?v=7KeeR20VBKY
 
-
+**Referencia de precisión de Google Translate**
+      
+      https://elcomercio.pe/tecnologia/empresas/google-traductor-preciso-nuevo-algoritmo-148869
 
 
 
