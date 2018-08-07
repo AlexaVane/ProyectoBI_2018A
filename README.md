@@ -15,6 +15,23 @@ machine learning**
 
 El objetivo de este proyecto es realizar un análisis de la opinión pública sobre los países que participaron en el Mundial de Rusia 2018, mediante el uso de algoritmos de aprendizaje y clasificador de sentimientos de los tweets recolectados desde el 28 de junio hasta el 15 de julio del 2018, fechas en las cuales se realizaron los partidos respectivos del mundial.
 
+Los países que analizar son los siguientes junto con la base de datos de Rusia:
++ De la fecha 6 de julio:
+
+
+  Uruguay – Francia
+  
+  Brasil – Bélgica
+
++ De la fecha 14 de julio (Tercer puesto)
+
+  Bélgica – Inglaterra
+
++ De la fecha 15 de julio (Final)
+
+  Francia - Croacia
+
+
 **Objetivos específicos**
 
 
