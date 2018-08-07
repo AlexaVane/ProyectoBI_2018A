@@ -1,6 +1,8 @@
 # ProyectoBI_2018A
-#Grupo 05
-#Integrantes: Macas Alexandra
+Grupo 05
+
+
+Integrantes: Macas Alexandra
              Giler Mario
              
          
