@@ -227,6 +227,8 @@ En este análisis Rusia a pesar de ser el país anfitrión del Mundial no genero
 Si se hace una relación con todos los tweets del mundial, la gran mayoría de tweets que se referían al mundial y los demás tweets eran de opiniones de diferentes tópicos.
 
 **Conclusiones**
+
+
 Se logro realizar todos los análisis propuestos para este proyecto, incluyendo dos análisis extras. Además mediante esta recolección de tweets del curso de logro determinar distintos análisis por partido y en general como análisis de sentimientos, que país genero más número de tweets, en que lugares hubo más tweets y demás.
 
 Las herramientas usadas para este proyecto fueron muy útiles y de facil uso lo que causo la disminución de la complejidad para las fases del proyecto. 
@@ -234,6 +236,8 @@ Las herramientas usadas para este proyecto fueron muy útiles y de facil uso lo 
 Debido a la cantidad de tweets se recomendaría hacer uso de la computación de la nube ya que el procesamiento de una base de datos grande una máquina consume muchos recursos y hace que la máquina baje en su rendimiento.
 
 **Apéndice**
+
+
 **Instalación**
 
 **CouchDB**
