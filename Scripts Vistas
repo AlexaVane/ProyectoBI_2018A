@@ -1,0 +1,57 @@
+#fra Me sirve para la fecha del partido y etiquetarlos
+function(doc) {
+  var fecha= doc.created_at;
+  var mes=fecha.substring(0, 10);
+  if(mes=='Fri Jul 06' && doc.lang=='en'){
+     var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+     str = str.toUpperCase();
+     var exacto= fecha.substring(0,13)
+    emit(exacto, str)
+  }
+}
+############################################################
+#fran Me ayuda para la fecha
+function(doc) {
+  if(doc.lang=='en'){
+     var fecha= doc.created_at;
+  var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+     str = str.toUpperCase();
+     var exacto= fecha.substring(0,13)
+    emit(exacto, str)
+}
+  
+}
+##############################################################
+#francountry Me sirve para por país
+function(doc) {
+  var country= doc.place.country;
+  if(country=='United Kingdom'){
+     var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+     str = str.toUpperCase();
+    emit(country, str)
+  }
+}
+###################################################################
+function(doc) {
+  if(doc.coordinates!=null)
+  emit(doc.coordinates.coordinates, doc.text);
+}
+##################################################################
+#franMundial ME sirve para los tweets relacionados del mundial por país
+function(doc) {
+  var country= doc.place.country;
+  if(country=='United Kingdom' && doc.lang=='en'){
+     var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+     str = str.toUpperCase();
+    emit(country, str)
+  }
+}
+##############################################################
+function(doc) {
+  var lang= doc.lang;
+var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+     str = str.toUpperCase();
+    emit(lang, str)
+  
+}
+
