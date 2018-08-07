@@ -120,7 +120,7 @@ Ahora podremos acceder a Apache CouchDB ejecutando la siguiente sintaxis, en un 
 Adquisición de datos
 
 
-En la esta primera fase del proyecto se recolecto los datos mediante un cosechador de tweets, el cual fue dado en el aula virtual, junto con las herramientas de couchDB, terminal de Ubuntu, el Script de phyton, Twitter se realizo los siguientes pasos.
+En la esta primera fase del proyecto se recolecto los datos mediante un cosechador de tweets, el cual fue dado en el aula virtual, junto con las herramientas de couchDB,y una base de datos NoSQL(CouchDb), terminal de Ubuntu, el Script de phyton, Twitter se realizo los siguientes pasos.
 + Abrimos couchDB con la siguiente dirección:
 
       https://localhost:5984/_utils/index.html
