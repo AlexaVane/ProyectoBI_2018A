@@ -33,7 +33,7 @@ de Twitter
 + CouchDB
 + Phyton (lenguaje de programación)
 + OracleVM VirtualBox 5.2 
-+ Sistema operativo Ubuntu 
++ Sistema operativo Ubuntu 16.04.1
 
 **Instalación**
 
@@ -99,20 +99,57 @@ Comprobamos el estado del servicio de CouchDB ejecutando:
 
 3. Acceder a Apache CouchDB en Ubuntu 
 
- 
-
-Paso 1
+ Paso 1
 
 Ahora podremos acceder a Apache CouchDB ejecutando la siguiente sintaxis, en un navegador de Ubuntu
 
     http://IP:5984/_utils/
     
+**Instalación de Oracle VMVirtualBox**
+
+    https://www.youtube.com/watch?v=nQiR5_iGVJI
     
+**Instalación de Ubuntu**
+
+    https://www.youtube.com/watch?v=nQiR5_iGVJI
     
-    
-    
-    
-**I
-**Desarrollo**
+
+**Fases del Proyecto**
+
+
+Adquisición de datos
+
+
+En la esta primera fase del proyecto se recolecto los datos mediante un cosechador de tweets, el cual fue dado en el aula virtual, junto con las herramientas de couchDB, terminal de Ubuntu, el Script de phyton, Twitter se realizo los siguientes pasos.
++ Abrimos couchDB con la siguiente dirección:
+
+      https://localhost:5984/_utils/index.html
+      
+      
++ Creamos un database con el nombre del país el cual se cosechara los tweets.
++ Creamos una aplicación de twitter y dentro de estas tendremos las credenciales necesarias para poder correr el siguiente script harvester_uio.py. para este caso es necesario ingresar a nuestra cuenta de twitter.
+
+      https://developer.twitter.com/
++ Seleccionamos las coordenadas del país a cosechar los tweets en:
+
+      https://boundingbox.Idokantech.com 
++ En el script harvester_uio.py. se modificó las credenciales del API de twitter e ingreso las coordenadas del área a cosechar.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
