@@ -4,8 +4,10 @@ Grupo 05
 
 Integrantes:
 
-Macas Alexandra
-Giler Mario
+   Macas Alexandra
+
+
+   Giler Mario
              
 **TEMA: Diseño e Implementación de un modelo de clasificación de sentimientos utilizando 
 machine learning** 
