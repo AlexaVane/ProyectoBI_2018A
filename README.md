@@ -278,13 +278,32 @@ Posterior filtramos solo los tweets que hacen referencia del mundial.
   
 Para este paso de análisis de la opinión publica se debe identificar mediante un clasificador la tendencia de la opinión de los usuarios.
 Se realizo los siguientes análisis de tweets:
-+ Tweets por hora del día (barras)
+
++ Tweets por fecha de partido (Extra)
+
+En este análisis cada equipo que avanzaba en el campeonato aumentaba el número de tweets. Para esto se uso cada fecha en que jugaba el equipo.
 + Tweets por fecha
+
+En este análisis general desde la fecha 28 de junio hasta 15 de julio, el 11 de julio hubo una gran cantidad de tweets del partido Inglaterra vs Croacia ya que ambos equipos eran los favoritos y este partido hubo prorroga y penales siendo el ganador Croacia.
 + Tweets por ubicación geográfica (mapa de calor)
-+ Tweets por idioma (barras)
+
+En este caso dependía del partido, los países que estaban seleccionados para llegar a la final tenían un numero tweets igual a los que llegaron a la final del campeonato y los que se encuentran en la periferia de un país presentaban más apoyo a su equipo.
++ Tweets por idioma general(barras)
+
+En este caso el idioma que se presento en una gran escala fue el inglés, posterior el español, debido a que la gente realizaba tweets en Ingles.
+
++ Tweets por idioma (extra)
+
+En este caso dependía del partido y el equipo que ganaba generaba el público más tweets.
 + Porcentaje de sentimientos (pastel)
+
+En este caso para cualquier equipo hay mas número de tweets neutrales, pero haciendo un énfasis de positivos y negativos de un equipo hay mas positivos, pero si se une tanto positivo como negativo sobrepasan el sentimiento de neutral, por lo cual la gente estuvo interviniendo en las redes sociales para dar apoyo a su equipo.
 + Tweets por país
+
+En este análisis Rusia a pesar de ser el país anfitrión del Mundial no genero tanta cantidad de tweets de apoyo para los distintos partidos del mundial solo cuando jugaba su país, por otro lado, los equipos favoritos para llegar a la final tenían una cantidad mayor a los otros equipos.
+
 + Tweets (relacionados al mundial) por país
+Si se hace una relación con todos los tweets del mundial, la gran mayoría de tweets que se referían al mundial y los demás tweets eran de opiniones de diferentes tópicos.
 
 
 
