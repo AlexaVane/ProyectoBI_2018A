@@ -115,7 +115,10 @@ Ahora podremos acceder a Apache CouchDB ejecutando la siguiente sintaxis, en un 
 
     https://www.youtube.com/watch?v=nQiR5_iGVJI
     
+**Instalación de phyton**
 
+    https://www.youtube.com/watch?v=7KeeR20VBKY
+    
 **Fases del Proyecto**
 
 
