@@ -170,7 +170,7 @@ Para el filtrado de los tweets se usó las siguientes sintaxis:
        }
     }
 
-**Vista para por país**
+**Vista  por país**
 
     function(doc) {
       var country= doc.place.country;
@@ -199,7 +199,7 @@ Para el filtrado de los tweets se usó las siguientes sintaxis:
       }
     }
 
-**Vista para en idioma**
+**Vista para el idioma**
 
     function(doc) {
     var lang= doc.lang;
@@ -211,8 +211,8 @@ Para el filtrado de los tweets se usó las siguientes sintaxis:
 **Procesamiento**
 
 Con la vista preprocesada de cada base de datos de un país se debe usar un script de phyton para la limpieza de emojis, caracteres especiales, links, tags debido a que estos caracteres no son usados para este análisis, con la siguiente sintaxis:
-def remove_emoji(string):
 
+    def remove_emoji(string):
     emoji_pattern = re.compile(
       u"(\ud83d[\ude00-\ude4f])|" # emoticons
       u"(\ud83c[\udf00-\uffff])|" # symbols & pictographs (1 of 2)
@@ -259,6 +259,15 @@ Posterior filtramos solo los tweets que hacen referencia del mundial.
     
   **Análisis**
   
+Para este paso de análisis de la opinión publica se debe identificar mediante un clasificador la tendencia de la opinión de los usuarios.
+Se realizo los siguientes análisis de tweets:
++ Tweets por hora del día (barras)
++ Tweets por fecha
++ Tweets por ubicación geográfica (mapa de calor)
++ Tweets por idioma (barras)
++ Porcentaje de sentimientos (pastel)
++ Tweets por país
++ Tweets (relacionados al mundial) por país
 
 
 
