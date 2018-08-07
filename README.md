@@ -143,6 +143,73 @@ Para esto se realizo los siguientes pasos:
 **Preprocesamiento**
 
 
+En este paso mediante couchDB se genera la vista de cada base de datos de un país, para posterior ser procesado, analizado y limpiado.
+Para el filtrado de los tweets se usó las siguientes sintaxis:
+
+**Vista para la fecha del partido y etiquetarlos**
+
+    function(doc) {
+      var fecha= doc.created_at;
+      var mes=fecha.substring(0, 10);
+        if(mes=='Fri Jul 06' && doc.lang=='en'){
+      var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+      str = str.toUpperCase();
+      var exacto= fecha.substring(0,13)
+      emit(exacto, str)
+      }
+    }
+**Vista para la fecha**
+
+    function(doc) {
+      if(doc.lang=='en'){
+       var fecha= doc.created_at;
+       var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+       str = str.toUpperCase();
+       var exacto= fecha.substring(0,13)
+       emit(exacto, str)
+       }
+    }
+
+**Vista para por país**
+
+    function(doc) {
+      var country= doc.place.country;
+       if(country=='United Kingdom'){
+        var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+        str = str.toUpperCase();
+        emit(country, str)
+       }
+    }
+
+**Vista para la coordenadas del país**
+
+    function(doc) {
+    if(doc.coordinates!=null)
+    emit(doc.coordinates.coordinates, doc.text);
+    }
+
+**Vista para los tweets relacionados del mundial por país**
+
+    function(doc) {
+    var country= doc.place.country;
+      if(country=='United Kingdom' && doc.lang=='en'){
+      var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+      str = str.toUpperCase();
+      emit(country, str)
+      }
+    }
+
+**Vista para en idioma**
+
+    function(doc) {
+    var lang= doc.lang;
+    var str = doc.text.replace(/[^a-zA-Z 0-9.]+/g,' ');
+    str = str.toUpperCase();
+    emit(lang, str)
+    }
+
+
+
 
 
 
